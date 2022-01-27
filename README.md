@@ -90,13 +90,13 @@ Listed only discounted products among the products in the products table in Dyna
 
 - DELETE endpoint that will delete any product with its productId (any product has discount should not be deleted, an error should be returned)
 
-Among the products in the products table in DynamoDB, only the product with the specified productId has been deleted.But when I tried to delete the discount product, the error message `discount products cannot be deleted` came up.
+Among the products in the products table in DynamoDB, only the product with the specified productId has been deleted.But when I tried to delete the discount product, the error message `discounted products cannot be deleted` came up.
 
 ![delete](images/delete.png)
 
 - UPDATE service that will change the stock of any product
 
-We filter the product that we want to change the stock number among the products in the products table in DynamoDB with the productId and change the stock number.
+We filter the product that we want to change the stock quantity among the products in the products table in DynamoDB with the productId and change the stock quantity.
 
 ![updatestock](images/updatestock.png)
 
