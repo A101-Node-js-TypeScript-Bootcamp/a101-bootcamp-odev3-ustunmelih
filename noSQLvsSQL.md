@@ -36,7 +36,7 @@ Günümüzde endüstride kullanılan çok sayıda veri tabanı bulunmaktadır. B
 | 7   |                    SQL veritabanları, hiyerarşik veri depolama için en uygun değildir                    |                                                                                                        NoSQL veritabanları, hiyerarşik veri depolama için en uygun olanıdır |
 | 8   |                                Güvenli, Çapraz Platform Desteği, Ücretsiz                                |                                                                                                                                   Yüksek performans, Esnek, Kullanımı kolay |
 | 9   |                                                   ACID                                                   |                                                                                                                                                                         CAP |
-| 10  |                                Güvenli, Çapraz Platform Desteği, Ücretsiz                                |                                                                                                                                                                             |
+| 10  |                                                                                                          |                                                                                                                                                                             |
 
 ---
 
