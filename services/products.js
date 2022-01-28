@@ -1,7 +1,7 @@
 const AWS = require('aws-sdk')
-const { v4: uuidv4 } = require('uuid')
+const { v4: uuidv4 } = require('uuid') //We call package 'uuid' which generates random characters to assign productId
 const { param } = require('../routes/api')
-
+//We write our configs to access our account in DynamoDB
 AWS.config.update({
   region: 'us-east-1',
   accessKeyId: 'AKIAS53ZYVGGOEAXMIHO',
@@ -11,7 +11,7 @@ AWS.config.update({
 
 let docClient = new AWS.DynamoDB.DocumentClient()
 var table = 'Products'
-
+//We write our configs to access our account in DynamoDB
 exports.add = async (params) => {
   if (params.isDiscount === 'true') {
     params.isDiscount = true
@@ -19,7 +19,7 @@ exports.add = async (params) => {
   const items = {
     TableName: table,
     Item: {
-      productId: uuidv4(),
+      productId: uuidv4(), //call random id from uuid package
       stock: params.stock,
       productName: params.productName,
       isDiscount: params.isDiscount,
@@ -86,6 +86,7 @@ exports.updateStock = async (params) => {
     Key: {
       productId: params.productId,
     },
+    //aws sdk special functions to update
     UpdateExpression: 'set stock = :stock',
     ExpressionAttributeValues: {
       ':stock': params.stock,
@@ -113,7 +114,7 @@ exports.getDiscount = async (params) => {
       TableName: table,
       Key: {},
       FilterExpression: 'isDiscount = :isDiscount',
-
+      //aws sdk special functions to filter
       ExpressionAttributeValues: {
         ':isDiscount': true,
       },
@@ -145,12 +146,12 @@ exports.delete = async (params) => {
     await docClient.delete(items).promise()
     return {
       status: true,
-      message: 'product deleted',
+      message: 'Product deleted',
     }
   } catch (err) {
     return {
       status: false,
-      message: 'discounted products cannot be deleted',
+      message: 'Discounted products cannot be deleted',
     }
   }
 }

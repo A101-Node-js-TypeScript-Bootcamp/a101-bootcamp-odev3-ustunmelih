@@ -9,7 +9,7 @@
 
 ## SQL Nedir?
 
-SQL yani "Structured Query Language” , ilişkisel veri tabanı yönetim sistem için en yaygın ve popüler sorgu dilidir.En temelde yapılandırılmış verilerin CRUD diye tabir ettiğimiz ekleme, bulma, kaydetme, güncelleme, silme ve yeni tablolar oluşturma işlemlerini yaparak verileri yönetmeyi sağlayan sorgu dilidir.ilk olarak 1970'lerde IBM araştırmacısı Edgar Frank Codd tarafından yayınlanan “Büyük Paylaşılan Veri Bankaları için İlişkisel Veri Modeli” adlı bir makalede bahsedilen SQL temel amaç olarak ilişkisel veri tabanları üzerinde verilerimizi yönetmemizi sağlayan sorgu dilidir.SQL ile sorgulama yapabileceğimiz populer sorgu dilleri ise Oracle, Microsoft SQL Server, MySQL, MSSQL olarak sıralayabiliriz.([1](#1))
+SQL yani "Structured Query Language” , ilişkisel veri tabanı yönetim sistem için en yaygın ve popüler sorgu dilidir.En temelde yapılandırılmış verilerin CRUD diye tabir ettiğimiz ekleme, bulma, kaydetme, güncelleme, silme ve yeni tablolar oluşturma işlemlerini yaparak verileri yönetmeyi sağlayan sorgu dilidir.ilk olarak 1970'lerde IBM araştırmacısı Edgar Frank Codd tarafından yayınlanan “Büyük Paylaşılan Veri Bankaları için İlişkisel Veri Modeli” adlı bir makalede bahsedilen SQL temel amaç olarak ilişkisel veri tabanları üzerinde verilerimizi yönetmemizi sağlayan sorgu dilidir.SQL ile sorgulama yapabileceğimiz populer veritabanlarını ise Oracle, Microsoft SQL Server, MySQL, MSSQL olarak sıralayabiliriz.([1](#1))
 
 ## NoSQL Nedir?
 
@@ -36,7 +36,7 @@ Günümüzde endüstride kullanılan çok sayıda veri tabanı bulunmaktadır. B
 | 7   |                    SQL veritabanları, hiyerarşik veri depolama için en uygun değildir                    |                                                                                                        NoSQL veritabanları, hiyerarşik veri depolama için en uygun olanıdır |
 | 8   |                                Güvenli, Çapraz Platform Desteği, Ücretsiz                                |                                                                                                                                   Yüksek performans, Esnek, Kullanımı kolay |
 | 9   |                                                   ACID                                                   |                                                                                                                                                                         CAP |
-| 10  |                                                                                                          |                                                                                                                                                                             |
+|     |                                                                                                          |                                                                                                                                                                             |
 
 ---
 

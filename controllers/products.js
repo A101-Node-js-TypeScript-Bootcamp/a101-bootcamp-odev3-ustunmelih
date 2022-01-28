@@ -1,7 +1,8 @@
 const AWS = require('aws-sdk')
-const uuidv4 = require('uuid')
+const uuidv4 = require('uuid') //We call package 'uuid' which generates random characters to assign productId
 const productsService = require('../services/products')
 
+//We write our configs to access our account in DynamoDB
 AWS.config.update({
   region: 'us-east-1',
   accessKeyId: 'AKIAS53ZYVGGOEAXMIHO',
@@ -11,6 +12,7 @@ AWS.config.update({
 
 let docClient = new AWS.DynamoDB.DocumentClient()
 var table = 'Products'
+//specify the name of our table in DynamoDB.
 
 exports.add = async (req, res) => {
   const response = await productsService.add(req.body)

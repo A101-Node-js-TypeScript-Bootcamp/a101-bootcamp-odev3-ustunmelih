@@ -4,6 +4,8 @@ let router = express.Router()
 
 let productsController = require('../../controllers/products')
 
+//We draw the path to the API endpoints
+//To send a request to a single product in the product path, we define it as ':productId'
 router.post('/', productsController.add)
 router.get('/', productsController.getAll)
 router.get('/getdiscount', productsController.getDiscount)

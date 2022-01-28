@@ -7,5 +7,5 @@ app.use(express.json())
 app.use('/api', endPoint)
 
 app.listen(3000, () => {
-  console.log('Server is running!!')
+  console.log('Server is running...')
 })
